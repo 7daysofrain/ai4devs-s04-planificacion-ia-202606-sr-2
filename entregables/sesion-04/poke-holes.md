@@ -12,6 +12,12 @@
 ### Sobre el email
 - Normalización: `Ana@Ejemplo.com` vs `ana@ejemplo.com` — ¿case-insensitive? Afecta directamente a la detección de duplicados de AUTH-002.
 
+## Decisión pendiente (trazada, no resuelta en este PR)
+- **Normalización / case-sensitivity del email** (AUTH-001, AUTH-002, AUTH-003): el PRD no define si el email es *case-insensitive*, es decir, si `Ana@Ejemplo.com` y `ana@ejemplo.com` son la misma cuenta. La decisión no está recogida en los criterios de aceptación ni en las preguntas abiertas de `output.md`, y afecta a:
+  - la detección de duplicados en el registro (AUTH-002),
+  - la búsqueda de la cuenta en el inicio de sesión (AUTH-003).
+  - **Pendiente de resolver antes de implementar.** Recomendación habitual: normalizar el email a minúsculas al guardarlo y comparar siempre en su forma normalizada.
+
 ### Sobre el formulario / flujo
 - Campos vacíos (email vacío, contraseña vacía, ambos vacíos).
 - Doble envío / doble clic → ¿se crean dos cuentas o hay protección de idempotencia?

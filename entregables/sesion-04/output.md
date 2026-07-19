@@ -8,11 +8,11 @@
 
 ---
 
-### Épica 1: Autenticación y gestión de cuenta (PRD §3.1)
+## Épica 1: Autenticación y gestión de cuenta (PRD §3.1)
 
 Cada usuario tiene una cuenta propia y sus datos nunca son visibles para otros. Fuera de alcance explícito del PRD: recuperación de contraseña y verificación de email por enlace.
 
-#### Story: AUTH-001 - Registro de cuenta con email y contraseña
+### Story: AUTH-001 - Registro de cuenta con email y contraseña
 Como visitante, quiero crear una cuenta con mi email y una contraseña, para empezar a gestionar mis tareas personales en FlowSync.
 
 **Criterios de Aceptación:**
@@ -38,7 +38,7 @@ Como visitante, quiero crear una cuenta con mi email y una contraseña, para emp
 
 ***
 
-#### Story: AUTH-002 - Aviso de email ya registrado
+### Story: AUTH-002 - Aviso de email ya registrado
 Como visitante cuyo email ya tiene cuenta, quiero que el sistema me lo indique y me ofrezca ir al inicio de sesión, para no quedarme bloqueado en el registro sin saber cómo continuar.
 
 **Criterios de Aceptación:**
@@ -59,7 +59,7 @@ Como visitante cuyo email ya tiene cuenta, quiero que el sistema me lo indique y
 
 ***
 
-#### Story: AUTH-003 - Inicio de sesión
+### Story: AUTH-003 - Inicio de sesión
 Como usuario registrado, quiero iniciar sesión con mi email y contraseña, para acceder a mis tareas personales.
 
 **Criterios de Aceptación:**
@@ -86,7 +86,7 @@ Como usuario registrado, quiero iniciar sesión con mi email y contraseña, para
 
 ***
 
-#### Story: AUTH-004 - Cierre de sesión
+### Story: AUTH-004 - Cierre de sesión
 Como usuario autenticado, quiero cerrar sesión, para impedir que otra persona use mi cuenta desde este dispositivo o navegador.
 
 **Criterios de Aceptación:**
@@ -107,7 +107,7 @@ Como usuario autenticado, quiero cerrar sesión, para impedir que otra persona u
 
 ***
 
-#### Story: AUTH-005 - Pantalla de bienvenida tras el registro (onboarding mínimo)
+### Story: AUTH-005 - Pantalla de bienvenida tras el registro (onboarding mínimo)
 Como usuario recién registrado, quiero ver una pantalla de bienvenida que explique en una frase qué hace FlowSync y me invite a crear mi primera tarea, para entender el valor del producto y empezar sin fricción.
 
 **Criterios de Aceptación:**
@@ -128,7 +128,7 @@ Como usuario recién registrado, quiero ver una pantalla de bienvenida que expli
 
 ***
 
-#### Story: AUTH-006 - Privacidad y aislamiento de datos entre usuarios
+### Story: AUTH-006 - Privacidad y aislamiento de datos entre usuarios
 Como usuario de FlowSync, quiero que mis tareas sean visibles y manipulables solo por mí, para gestionar mis pendientes con privacidad.
 
 **Criterios de Aceptación:**
@@ -149,11 +149,11 @@ Como usuario de FlowSync, quiero que mis tareas sean visibles y manipulables sol
 
 ---
 
-### Épica 2: Gestión de tareas (CRUD) (PRD §3.2)
+## Épica 2: Gestión de tareas (CRUD) (PRD §3.2)
 
 El núcleo del producto. Una tarea tiene como mínimo: título, descripción opcional, estado (`pending`, `completed`, `archived`) y fecha límite opcional. Toda tarea recién creada nace en `pending`.
 
-#### Story: CRUD-001 - Creación de tareas
+### Story: CRUD-001 - Creación de tareas
 Como usuario registrado, quiero crear una tarea indicando al menos un título, para capturar mis pendientes de forma rápida.
 
 **Criterios de Aceptación:**
@@ -179,7 +179,7 @@ Como usuario registrado, quiero crear una tarea indicando al menos un título, p
 
 ***
 
-#### Story: CRUD-002 - Listado de tareas
+### Story: CRUD-002 - Listado de tareas
 Como usuario registrado, quiero ver el listado de mis tareas, para saber qué tengo pendiente y en qué estado está cada cosa.
 
 **Criterios de Aceptación:**
@@ -198,7 +198,7 @@ Como usuario registrado, quiero ver el listado de mis tareas, para saber qué te
 
 ***
 
-#### Story: CRUD-003 - Edición de tareas
+### Story: CRUD-003 - Edición de tareas
 Como usuario registrado, quiero editar cualquier campo de una tarea existente, para mantener mi lista fiel a la realidad.
 
 **Criterios de Aceptación:**
@@ -220,7 +220,7 @@ Como usuario registrado, quiero editar cualquier campo de una tarea existente, p
 
 ***
 
-#### Story: CRUD-004 - Borrado de tareas
+### Story: CRUD-004 - Borrado de tareas
 Como usuario registrado, quiero borrar una tarea, para eliminar de mi lista lo que ya no necesito gestionar.
 
 **Criterios de Aceptación:**
@@ -241,7 +241,7 @@ Como usuario registrado, quiero borrar una tarea, para eliminar de mi lista lo q
 
 ***
 
-#### Story: CRUD-005 - Cambio de estado de tareas
+### Story: CRUD-005 - Cambio de estado de tareas
 Como usuario registrado, quiero cambiar el estado de una tarea entre `pending`, `completed` y `archived`, para reflejar el progreso real de mi trabajo.
 
 **Criterios de Aceptación:**
@@ -266,11 +266,11 @@ Como usuario registrado, quiero cambiar el estado de una tarea entre `pending`, 
 
 ---
 
-### Épica 3: Organización y filtrado (PRD §3.3)
+## Épica 3: Organización y filtrado (PRD §3.3)
 
 Con varias tareas activas (el usuario objetivo maneja entre 5 y 30), el usuario necesita encontrarlas y priorizarlas.
 
-#### Story: ORG-001 - Filtrado de tareas por estado
+### Story: ORG-001 - Filtrado de tareas por estado
 Como usuario con varias tareas, quiero filtrar el listado por estado, para ver solo las pendientes, las completadas o las archivadas según lo que necesite en cada momento.
 
 **Criterios de Aceptación:**
@@ -294,7 +294,7 @@ Como usuario con varias tareas, quiero filtrar el listado por estado, para ver s
 
 ***
 
-#### Story: ORG-002 - Ordenación por defecto orientada a "hoy"
+### Story: ORG-002 - Ordenación por defecto orientada a "hoy"
 Como usuario, quiero que el listado se ordene por defecto mostrando primero lo más relevante para hoy, para decidir de un vistazo qué debo atender ahora.
 
 **Criterios de Aceptación:**
@@ -314,7 +314,7 @@ Como usuario, quiero que el listado se ordene por defecto mostrando primero lo m
 
 ***
 
-#### Story: ORG-003 - Estado vacío del listado
+### Story: ORG-003 - Estado vacío del listado
 Como usuario sin tareas visibles, quiero ver un estado vacío con una invitación a crear la primera, para no encontrarme una pantalla en blanco sin guía.
 
 **Criterios de Aceptación:**
@@ -335,11 +335,11 @@ Como usuario sin tareas visibles, quiero ver un estado vacío con una invitació
 
 ---
 
-### Épica 4: Exportación (PRD §3.4)
+## Épica 4: Exportación (PRD §3.4)
 
 Los usuarios pueden llevarse sus datos fuera de FlowSync.
 
-#### Story: EXP-001 - Exportación de tareas a CSV
+### Story: EXP-001 - Exportación de tareas a CSV
 Como usuario registrado, quiero exportar mis tareas a un archivo CSV, para llevarme mis datos fuera de FlowSync.
 
 **Criterios de Aceptación:**
@@ -365,11 +365,11 @@ Como usuario registrado, quiero exportar mis tareas a un archivo CSV, para lleva
 
 ---
 
-### Épica 5: Sincronización con Google Calendar (PRD §3.5)
+## Épica 5: Sincronización con Google Calendar (PRD §3.5)
 
 La funcionalidad diferenciadora del MVP y la más arriesgada. La dirección de sincronización comprometida es **FlowSync → Google Calendar**; la sincronización inversa (editar en Google y reflejarlo en la tarea) queda condicionada a un spike técnico según la nota de producto del PRD y **no se descompone en stories aquí**.
 
-#### Story: SYNC-001 - Conexión de la cuenta de Google (OAuth)
+### Story: SYNC-001 - Conexión de la cuenta de Google (OAuth)
 Como usuario registrado, quiero conectar mi cuenta de Google a FlowSync mediante autorización OAuth, para que mis tareas con fecha puedan reflejarse en mi calendario.
 
 **Criterios de Aceptación:**
@@ -392,7 +392,7 @@ Como usuario registrado, quiero conectar mi cuenta de Google a FlowSync mediante
 
 ***
 
-#### Story: SYNC-002 - Las tareas con fecha límite aparecen como eventos
+### Story: SYNC-002 - Las tareas con fecha límite aparecen como eventos
 Como usuario con Google conectado, quiero que mis tareas con fecha límite aparezcan como eventos en mi Google Calendar, para ver mis pendientes y mi tiempo en un único sitio.
 
 **Criterios de Aceptación:**
@@ -416,7 +416,7 @@ Como usuario con Google conectado, quiero que mis tareas con fecha límite apare
 
 ***
 
-#### Story: SYNC-003 - Actualización del evento al cambiar la tarea
+### Story: SYNC-003 - Actualización del evento al cambiar la tarea
 Como usuario con Google conectado, quiero que al cambiar la fecha de una tarea se actualice su evento en Google Calendar, para que el calendario nunca quede desactualizado respecto a mi lista.
 
 **Criterios de Aceptación:**
@@ -435,7 +435,7 @@ Como usuario con Google conectado, quiero que al cambiar la fecha de una tarea s
 
 ***
 
-#### Story: SYNC-004 - Reflejo de tareas completadas o borradas
+### Story: SYNC-004 - Reflejo de tareas completadas o borradas
 Como usuario con Google conectado, quiero que al completar o borrar una tarea su evento se elimine o se marque en Google Calendar, para no ver en el calendario compromisos que ya no existen.
 
 **Criterios de Aceptación:**
@@ -455,7 +455,7 @@ Como usuario con Google conectado, quiero que al completar o borrar una tarea su
 
 ***
 
-#### Story: SYNC-005 - Desconexión de la cuenta de Google
+### Story: SYNC-005 - Desconexión de la cuenta de Google
 Como usuario con Google conectado, quiero poder desconectar mi cuenta en cualquier momento, para recuperar el control sobre qué escribe FlowSync en mi calendario.
 
 **Criterios de Aceptación:**
@@ -476,7 +476,7 @@ Como usuario con Google conectado, quiero poder desconectar mi cuenta en cualqui
 
 ***
 
-#### Story: SYNC-006 - Resiliencia ante fallos de la API de Google
+### Story: SYNC-006 - Resiliencia ante fallos de la API de Google
 Como usuario, quiero que mis tareas se guarden en FlowSync aunque la sincronización con Google falle y que esta se reintente más tarde, para no perder nunca mis datos por un problema externo.
 
 **Criterios de Aceptación:**
